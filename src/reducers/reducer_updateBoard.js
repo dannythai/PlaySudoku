@@ -7,7 +7,7 @@ export default function(state = {}, action) {
 			console.log('my new state!: ', action.payload);
 			if(state.puzzle) {
 				console.log('Path 1');
-				return Object.assign([], action.payload, state.puzzle.activePuzzle);
+				return Object.assign([], action.payload, state.currentBoard, state.puzzle.activePuzzle);
 			} else {
 				console.log('Path 2: ', state);
 				return action.payload;

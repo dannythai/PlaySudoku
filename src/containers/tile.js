@@ -15,12 +15,13 @@ class Tile extends Component {
 		console.log('value added: ', myNum);
 		// console.log('my props: ', this.props);
 		// console.log('my currentBoard: ', this.props.currentBoard);
-		this.props.currentBoard[Number(this.props.index)] = myNum;
+		this.props.activePuzzle[Number(this.props.index)] = myNum;
 		// const myNewBoard = this.props.currentBoard;
 		// var myNewBoard = Object.assign(this.props.activePuzzle)
 		// console.log('this is my newBoard: ', myNewBoard);
 		// var currentBoardState = myNewBoard;
 		// console.log('this is my currentBoardState: ', currentBoardState);
+		console.log('onInputChange: ', this.props.activePuzzle);
 		this.props.updateBoard(this.props.activePuzzle);
 	}
 
