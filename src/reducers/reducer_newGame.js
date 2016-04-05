@@ -6,6 +6,8 @@ export default function(state = {}, action) {
 		case NEW_GAME:
 			console.log("This is the new state ", {...state, ...action.payload});
 			return {...state, ...action.payload}
+		default:
+			console.log('New game not found...returning prev state');
+			return state;
 	}
-	return state;
 }

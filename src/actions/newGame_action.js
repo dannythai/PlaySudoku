@@ -11,7 +11,6 @@ export function makePuzzle() {
 	var newGame = {
 		activePuzzle: maskedGame,
 		solution: solvedGame,
-		solveGame: false
 	}
 
 	console.log('payload:', newGame);

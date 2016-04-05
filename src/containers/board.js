@@ -13,10 +13,13 @@ class Board extends Component {
 		console.log('Rendering tiles! ', this.props.puzzle.activePuzzle);
 
 		const puzzles = this.props.puzzle;
+		const solveGame = this.props.solveGame;
+		console.log(solveGame);
+		const answer = puzzles.solution;
 		if(this.props.puzzle.activePuzzle){			
 			return this.props.puzzle.activePuzzle.map(function(number, i) {
 				return (
-						<Tile active={puzzles.solveGame} key={i} val={number} solution={puzzles.solution[i]} />
+						<Tile solveGame={solveGame} key={i} val={number} solution={answer[i]} />
 				);
 			})
 		}
@@ -34,7 +37,7 @@ class Board extends Component {
 }	
 
 function mapStateToProps(state) {
-	return { puzzle: state.puzzle };
+	return { puzzle: state.puzzle, solveGame: state.solveGame };
 }
 
 export default connect(mapStateToProps)(Board);

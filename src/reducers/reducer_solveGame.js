@@ -1,10 +1,15 @@
 import { SOLVE_GAME } from '../actions/solveGame_action';
+import { NEW_GAME } from '../actions/newGame_action';
 
-export default function(state = {}, action) {
+export default function(state = false, action) {
 	console.log('Action received', action);
 	switch(action.type) {
+		case NEW_GAME:
+			return false;
 		case SOLVE_GAME:
-			return Object.assign({}, state, action.payload);
+			console.log("Solving game!");
+			return Object.assign({}, action.payload);
+		default:
+			return state;
 	}
-	return state;
 }

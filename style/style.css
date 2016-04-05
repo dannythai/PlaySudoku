@@ -1,15 +1,15 @@
 .board {
 	border: 1px solid #000;
-	width: 500px;
-	height: 500px;
+	width: 477px;
+	height: 477px;
 	margin: 0 auto;
 }
 
 .menu {
-	border: 1px solid #000;
-	width: 500px;
-	height: 100px;
-	margin: 0 auto;
+  border: 3px solid #000;
+  width: 476px;
+  height: 93px;
+  margin: 0 auto;
 }
 
 .btn-menu {
@@ -19,16 +19,29 @@
 
 .tile {
 	border: 1px solid #000;
-	width: 30px;
-	height: 30px;
+	width: 53px;
+	height: 53px;
 	display: inline-block;
-	margin: 10px 10px;
+	margin: 0;
 	vertical-align: middle;
+	font-size: 35px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 53px;
+	position: relative;
 }
 
 .input-box {
-	width: 24px;
-	height: 24px;
+	width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 95%;
+  outline: none;
+  border: 0;
+  text-align: center;
+  font-family: "Times New Roman";
 }
 
    
