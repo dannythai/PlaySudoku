@@ -4,7 +4,8 @@ export default function(state = {}, action) {
 	console.log('Action received', action);
 	switch(action.type) {
 		case NEW_GAME:
-			return action.payload;
+			console.log("This is the new state ", {...state, ...action.payload});
+			return {...state, ...action.payload}
 	}
 	return state;
 }

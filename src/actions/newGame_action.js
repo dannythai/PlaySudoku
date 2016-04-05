@@ -10,7 +10,8 @@ export function makePuzzle() {
 	var solvedGame = thePuzzle.save;
 	var newGame = {
 		activePuzzle: maskedGame,
-		solvedGame: solvedGame
+		solution: solvedGame,
+		solveGame: false
 	}
 
 	console.log('payload:', newGame);
