@@ -2,14 +2,16 @@
 	border: 1px solid #000;
 	width: 477px;
 	height: 477px;
-	margin: 0 auto;
+	margin: 50px auto;
+	box-shadow: 0 0 100px 10px rgba(0,0,0,0.5);
 }
 
 .menu {
-  border: 3px solid #000;
+  border: 1px solid #000;
   width: 476px;
   height: 93px;
-  margin: 0 auto;
+  box-shadow: 0 0 100px 10px rgba(0,0,0,0.5);
+  margin: -20px auto;
 }
 
 .btn-menu {

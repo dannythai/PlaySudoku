@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Tile from '../components/tile';
+import Tile from './tile';
 
 
 class Board extends Component {
@@ -10,16 +10,13 @@ class Board extends Component {
 		this.props = this;
 	}
 	renderTiles() {
-		console.log('Rendering tiles! ', this.props.puzzle.activePuzzle);
-
 		const puzzles = this.props.puzzle;
 		const solveGame = this.props.solveGame;
-		console.log(solveGame);
 		const answer = puzzles.solution;
 		if(this.props.puzzle.activePuzzle){			
-			return this.props.puzzle.activePuzzle.map(function(number, i) {
+			return this.props.puzzle.activePuzzle.map(function(number, index) {
 				return (
-						<Tile solveGame={solveGame} key={i} val={number} solution={answer[i]} />
+						<Tile solveGame={solveGame} key={index} index={index} val={number} solution={answer[index]} />
 				);
 			})
 		}

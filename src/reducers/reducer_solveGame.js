@@ -2,7 +2,6 @@ import { SOLVE_GAME } from '../actions/solveGame_action';
 import { NEW_GAME } from '../actions/newGame_action';
 
 export default function(state = false, action) {
-	console.log('Action received', action);
 	switch(action.type) {
 		case NEW_GAME:
 			return false;
