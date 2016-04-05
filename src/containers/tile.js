@@ -23,6 +23,9 @@ class Tile extends Component {
 		// console.log('this is my currentBoardState: ', currentBoardState);
 		console.log('onInputChange: ', this.props.activePuzzle);
 		this.props.updateBoard(this.props.activePuzzle);
+		if(JSON.stringify(this.props.activePuzzle) === JSON.stringify(this.props.solutionArr)) {
+			console.log('solved it!');
+		}
 	}
 
 	render() {
@@ -37,7 +40,7 @@ class Tile extends Component {
 }
 
 function mapStateToProps(state) {
-	return {currentBoard: state.currentBoard, activePuzzle: state.puzzle.activePuzzle};
+	return {currentBoard: state.currentBoard, activePuzzle: state.puzzle.activePuzzle, solutionArr: state.puzzle.solution};
 }
 
 function mapDispatchToProps(dispatch) {

@@ -31,6 +31,7 @@
 	text-align: center;
 	line-height: 53px;
 	position: relative;
+	color: #2261D6
 }
 
 .input-box {
@@ -44,6 +45,7 @@
   border: 0;
   text-align: center;
   font-family: "Times New Roman";
+  color: #000;
 }
 
    
