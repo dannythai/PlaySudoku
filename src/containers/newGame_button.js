@@ -15,7 +15,7 @@ class NewGameButton extends Component {
 	}
 	render() {
 		return (
-			<button type="button" onClick={this.handleClick}>
+			<button className="btn btn-primary menu-btn" type="button" onClick={this.handleClick}>
 				New Puzzle
 			</button>
 		);

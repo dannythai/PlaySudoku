@@ -7,7 +7,6 @@ const MenuList = (props) => {
 
 	return (
 		<div className ="menu">
-			Menu 
 			<div className="btn-menu">
 				<NewGameButton />
 				<SolveButton />

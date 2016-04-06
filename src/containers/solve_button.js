@@ -15,7 +15,7 @@ class SolvePuzzleButton extends Component {
 	}
 	render() {
 		return (
-			<button onClick={this.handleClick} type="button">Solution</button>
+			<button className="btn btn-primary menu-btn"onClick={this.handleClick} type="button">Solution</button>
 		);
 	}
 }

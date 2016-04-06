@@ -21,7 +21,7 @@ class Board extends Component {
 			})
 		}
 		else {
-			return <p>Click on the New Game button below to play!</p>;
+			return <h1 className="openMsg">Click on the New Game button below to play!</h1>;
 		}
 	}
 	render() {

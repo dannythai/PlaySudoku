@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { updateBoard } from '../actions/updateBoard_action';
 
+
 class Tile extends Component {
 	constructor(props) {
 		super(props);
@@ -13,18 +14,11 @@ class Tile extends Component {
 	onInputChange(value) {
 		const myNum = Number(value);
 		console.log('value added: ', myNum);
-		// console.log('my props: ', this.props);
-		// console.log('my currentBoard: ', this.props.currentBoard);
+		console.log('solution: ', this.props.solution);
 		this.props.activePuzzle[Number(this.props.index)] = myNum;
-		// const myNewBoard = this.props.currentBoard;
-		// var myNewBoard = Object.assign(this.props.activePuzzle)
-		// console.log('this is my newBoard: ', myNewBoard);
-		// var currentBoardState = myNewBoard;
-		// console.log('this is my currentBoardState: ', currentBoardState);
-		console.log('onInputChange: ', this.props.activePuzzle);
 		this.props.updateBoard(this.props.activePuzzle);
 		if(JSON.stringify(this.props.activePuzzle) === JSON.stringify(this.props.solutionArr)) {
-			console.log('solved it!');
+			swal({   title: "Sweet!",   text: "MK35 > MK32 === true",   imageUrl: "../../assets/victorybaby.jpg" });
 		}
 	}
 
@@ -50,4 +44,3 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(mapStateToProps, mapDispatchToProps)(Tile);
 
-// export default Tile;
