@@ -10,7 +10,6 @@ class NewGameButton extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick() {
-		// send API call to generate a new game and solution
 		this.props.makePuzzle();
 	}
 	render() {
