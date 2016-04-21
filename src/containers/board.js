@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Tile from './tile';
 
-
 class Board extends Component {
 	constructor(props) {
 		super(props);
-
 		this.props = this;
 	}
+
 	renderTiles() {
 		const puzzles = this.props.puzzle;
 		const solveGame = this.props.solveGame;
@@ -24,6 +23,7 @@ class Board extends Component {
 			return <h1 className="openMsg">Click on the New Game button below to play!</h1>;
 		}
 	}
+
 	render() {
 		return (
 			<div className="board">
@@ -31,7 +31,7 @@ class Board extends Component {
 			</div>
 		);
 	}
-}	
+}
 
 function mapStateToProps(state) {
 	return { puzzle: state.puzzle, solveGame: state.solveGame };

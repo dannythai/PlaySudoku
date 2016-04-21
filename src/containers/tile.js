@@ -3,11 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { updateBoard } from '../actions/updateBoard_action';
 
-
 class Tile extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {};
 	}
 

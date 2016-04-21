@@ -1,6 +1,5 @@
 import { UPDATE_BOARD } from '../actions/updateBoard_action';
 
-
 export default function(state = {}, action) {
 	switch(action.type) {
 		case UPDATE_BOARD:

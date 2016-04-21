@@ -6,12 +6,13 @@ import { solvePuzzle } from '../actions/solveGame_action';
 class SolvePuzzleButton extends Component {
 	constructor(props) {
 		super(props);
-
 		this.handleClick = this.handleClick.bind(this);
 	}
+
 	handleClick() {
 		this.props.solvePuzzle();
 	}
+	
 	render() {
 		return (
 			<button className="btn btn-primary menu-btn"onClick={this.handleClick} type="button">Solution</button>
