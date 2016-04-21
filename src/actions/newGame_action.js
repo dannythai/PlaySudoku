@@ -1,8 +1,6 @@
-
 import sudoku_API from '../sudoku-api';
 
 export const NEW_GAME = 'NEW_GAME';
-
 
 export function makePuzzle() {
 	var thePuzzle = new sudoku_API;
