@@ -16,7 +16,7 @@ class Tile extends Component {
 		this.props.activePuzzle[Number(this.props.index)] = myNum;
 		this.props.updateBoard(this.props.activePuzzle);
 		if(JSON.stringify(this.props.activePuzzle) === JSON.stringify(this.props.solutionArr)) {
-			swal({   title: "Sweet!",   text: "MK35 > MK32 === true",   imageUrl: "../../assets/victorybaby.jpg" });
+			swal({   title: "Sweet!",   text: "Puzzle Complete!",   imageUrl: "../../assets/victorybaby.jpg" });
 		}
 	}
 
