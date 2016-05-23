@@ -12,12 +12,16 @@ class Board extends Component {
 		const puzzles = this.props.puzzle;
 		const solveGame = this.props.solveGame;
 		const answer = puzzles.solution;
-		if(this.props.puzzle.activePuzzle){			
-			return this.props.puzzle.activePuzzle.map(function(number, index) {
-				return (
-						<Tile solveGame={solveGame} key={index} index={index} val={number} solution={answer[index]} />
-				);
-			})
+		if (this.props.puzzle.activePuzzle) {
+			return this.props.puzzle.activePuzzle.map((number, index) =>
+				<Tile
+					solveGame={solveGame}
+					key={index}
+					index={index}
+					val={number}
+					solution={answer[index]}
+				/>
+			);
 		}
 		else {
 			return <h1 className="openMsg">Click on the New Game button below to play!</h1>;
