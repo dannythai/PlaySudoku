@@ -1,25 +1,14 @@
-# ReduxSimpleStarter
-
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+# PlayMoarSudoku
 
 ###Getting Started###
 
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the gulp process with the following:
-
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Clone this repo, install dependencies, then play sudoku for ever:
 
 ```
 	> npm install
 	> npm start
 ```
+
+###Things I want to add###
+
+Backlog: visual tile validation, 3x3 chamber squares
