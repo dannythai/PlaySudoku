@@ -1,4 +1,4 @@
-# PlayMoarSudoku
+# PlaySudoku
 
 ###Getting Started###
 
