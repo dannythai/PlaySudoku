@@ -12,7 +12,7 @@ class NewGameButton extends Component {
 	handleClick() {
 		this.props.makePuzzle();
 	}
-	
+
 	render() {
 		return (
 			<button className="btn btn-primary menu-btn" type="button" onClick={this.handleClick}>

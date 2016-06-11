@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { updateBoard } from '../actions/updateBoard_action';
+import { puzzleAPI } from '../actions/newGame_action';
 
 class Tile extends Component {
 	constructor(props) {
@@ -11,8 +12,16 @@ class Tile extends Component {
 
 	onInputChange(value) {
 		const myNum = Number(value);
-		console.log('value added: ', myNum);
-		console.log('solution: ', this.props.solution);
+		// console.log('value added: ', myNum);
+		// console.log('solution: ', this.props.solution);
+
+		// validate user input against sudoku rules
+		var row = Math.floor(this.props.index/9);
+		var col = Math.floor(this.props.index % 9);
+		if(!puzzleAPI._checkVal(this.props.activePuzzle, row, col, myNum)) {
+			console.log('ILLEGAL MOVE');
+		}
+
 		this.props.activePuzzle[Number(this.props.index)] = myNum;
 		this.props.updateBoard(this.props.activePuzzle);
 		if(JSON.stringify(this.props.activePuzzle) === JSON.stringify(this.props.solutionArr)) {

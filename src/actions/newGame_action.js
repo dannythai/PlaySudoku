@@ -4,6 +4,10 @@ export const NEW_GAME = 'NEW_GAME';
 
 export function makePuzzle() {
 	var thePuzzle = new sudoku_API;
+
+	// capture puzzle instance api for check val
+	puzzleAPI = thePuzzle;
+
 	thePuzzle._newGame();
 	var maskedGame = thePuzzle.matrix;
 	var solvedGame = thePuzzle.save;
@@ -17,3 +21,5 @@ export function makePuzzle() {
 		payload: newGame
 	}
 }
+
+export let puzzleAPI;
