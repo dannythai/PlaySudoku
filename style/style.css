@@ -30,7 +30,22 @@
 	text-align: center;
 	line-height: 53px;
 	position: relative;
-	color: #2261D6
+	color: #2261D6;
+}
+
+.tile-invalid {
+  border: 1px solid #000;
+  width: 53px;
+  height: 53px;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 35px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 53px;
+  position: relative;
+  background-color: #CC0000;
 }
 
 .input-box {
