@@ -39,7 +39,7 @@ class Tile extends Component {
 		if (this.props.solveGame) {
 		  return (<span className="tile">{this.props.solution}</span>);
 		} else if (this.props.val === 0) {
-			return (<span className={this.state.valid ? "tile" : "tile-invalid"}><input onChange={event => this.onInputChange(event.target.value)} className="input-box" min="1" max="9" /></span>);
+			return (<span className="tile"><input onChange={event => this.onInputChange(event.target.value)} className={this.state.valid ? "input-box" : "input-box-invalid"} min="1" max="9" /></span>);
 		} else {
 			return (<span className="tile">{this.props.val}</span>);
 		}
