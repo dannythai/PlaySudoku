@@ -9,6 +9,6 @@ Clone this repo, install dependencies, then play sudoku whenever you want:
 	> npm start
 ```
 
-###Things in progress###
+###Things to do###
 
-Backlog: visual tile validation, 3x3 chamber squares
+Backlog: 3x3 chamber squares, make buttons pretty
