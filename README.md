@@ -11,4 +11,4 @@ Clone this repo, install dependencies, then play sudoku whenever you want:
 
 ###Things to do###
 
-Backlog: 3x3 chamber squares, make buttons pretty
+Backlog: 3x3 chamber squares, limit user input
