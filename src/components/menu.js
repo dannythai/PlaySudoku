@@ -5,7 +5,7 @@ import SolveButton from '../containers/solve_button';
 const MenuList = (props) => {
 	return (
 		<div className ="menu">
-			<div className="btn-menu">
+			<div className="container-menu">
 				<NewGameButton />
 				<SolveButton />
 			</div>
