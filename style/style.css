@@ -11,8 +11,8 @@
 }
 
 .container-menu {
-	margin: auto;
-	padding-top: 35px;
+	margin-right: 32px;
+  padding-top: 27px;
 }
 
 .menu {
@@ -26,6 +26,27 @@
 
 .menu-btn {
   margin: 0 auto;
+  background-color: #216AF3; /* Green */
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+  background-color: #0d5bee;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .tile {
